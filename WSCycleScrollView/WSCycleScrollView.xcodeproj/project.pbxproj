@@ -16,6 +16,13 @@
 		882A93A91D5B057C00DDBFB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882A93A71D5B057C00DDBFB1 /* LaunchScreen.storyboard */; };
 		882A93B41D5B057C00DDBFB1 /* WSCycleScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A93B31D5B057C00DDBFB1 /* WSCycleScrollViewTests.m */; };
 		882A93BF1D5B057C00DDBFB1 /* WSCycleScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A93BE1D5B057C00DDBFB1 /* WSCycleScrollViewUITests.m */; };
+		882A93CF1D5B076C00DDBFB1 /* WSPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A93CE1D5B076C00DDBFB1 /* WSPageView.m */; };
+		882A93D21D5B08F700DDBFB1 /* WSIndexBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A93D11D5B08F700DDBFB1 /* WSIndexBanner.m */; };
+		882A93D41D5B0ADA00DDBFB1 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 882A93D31D5B0ADA00DDBFB1 /* 0.jpg */; };
+		882A93D61D5B0AE200DDBFB1 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 882A93D51D5B0AE200DDBFB1 /* 1.jpg */; };
+		882A93D81D5B0AE900DDBFB1 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 882A93D71D5B0AE900DDBFB1 /* 2.jpg */; };
+		882A93DA1D5B0AF000DDBFB1 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 882A93D91D5B0AF000DDBFB1 /* 3.jpg */; };
+		882A93DC1D5B0AF500DDBFB1 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 882A93DB1D5B0AF500DDBFB1 /* 4.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,15 @@
 		882A93BA1D5B057C00DDBFB1 /* WSCycleScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSCycleScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		882A93BE1D5B057C00DDBFB1 /* WSCycleScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSCycleScrollViewUITests.m; sourceTree = "<group>"; };
 		882A93C01D5B057C00DDBFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		882A93CD1D5B076C00DDBFB1 /* WSPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSPageView.h; sourceTree = "<group>"; };
+		882A93CE1D5B076C00DDBFB1 /* WSPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSPageView.m; sourceTree = "<group>"; };
+		882A93D01D5B08F700DDBFB1 /* WSIndexBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSIndexBanner.h; sourceTree = "<group>"; };
+		882A93D11D5B08F700DDBFB1 /* WSIndexBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSIndexBanner.m; sourceTree = "<group>"; };
+		882A93D31D5B0ADA00DDBFB1 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		882A93D51D5B0AE200DDBFB1 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		882A93D71D5B0AE900DDBFB1 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		882A93D91D5B0AF000DDBFB1 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		882A93DB1D5B0AF500DDBFB1 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +119,16 @@
 		882A93951D5B057C00DDBFB1 /* WSCycleScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				882A93CC1D5B072C00DDBFB1 /* WSCycle */,
 				882A93991D5B057C00DDBFB1 /* AppDelegate.h */,
 				882A939A1D5B057C00DDBFB1 /* AppDelegate.m */,
 				882A939C1D5B057C00DDBFB1 /* ViewController.h */,
 				882A939D1D5B057C00DDBFB1 /* ViewController.m */,
+				882A93D31D5B0ADA00DDBFB1 /* 0.jpg */,
+				882A93D51D5B0AE200DDBFB1 /* 1.jpg */,
+				882A93D71D5B0AE900DDBFB1 /* 2.jpg */,
+				882A93D91D5B0AF000DDBFB1 /* 3.jpg */,
+				882A93DB1D5B0AF500DDBFB1 /* 4.jpg */,
 				882A939F1D5B057C00DDBFB1 /* Main.storyboard */,
 				882A93A51D5B057C00DDBFB1 /* Assets.xcassets */,
 				882A93A71D5B057C00DDBFB1 /* LaunchScreen.storyboard */,
@@ -141,6 +163,17 @@
 				882A93C01D5B057C00DDBFB1 /* Info.plist */,
 			);
 			path = WSCycleScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		882A93CC1D5B072C00DDBFB1 /* WSCycle */ = {
+			isa = PBXGroup;
+			children = (
+				882A93CD1D5B076C00DDBFB1 /* WSPageView.h */,
+				882A93CE1D5B076C00DDBFB1 /* WSPageView.m */,
+				882A93D01D5B08F700DDBFB1 /* WSIndexBanner.h */,
+				882A93D11D5B08F700DDBFB1 /* WSIndexBanner.m */,
+			);
+			path = WSCycle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,8 +279,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882A93DC1D5B0AF500DDBFB1 /* 4.jpg in Resources */,
+				882A93D41D5B0ADA00DDBFB1 /* 0.jpg in Resources */,
+				882A93DA1D5B0AF000DDBFB1 /* 3.jpg in Resources */,
+				882A93D61D5B0AE200DDBFB1 /* 1.jpg in Resources */,
 				882A93A91D5B057C00DDBFB1 /* LaunchScreen.storyboard in Resources */,
 				882A93A61D5B057C00DDBFB1 /* Assets.xcassets in Resources */,
+				882A93D81D5B0AE900DDBFB1 /* 2.jpg in Resources */,
 				882A93A11D5B057C00DDBFB1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +311,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882A93D21D5B08F700DDBFB1 /* WSIndexBanner.m in Sources */,
+				882A93CF1D5B076C00DDBFB1 /* WSPageView.m in Sources */,
 				882A939E1D5B057C00DDBFB1 /* ViewController.m in Sources */,
 				882A939B1D5B057C00DDBFB1 /* AppDelegate.m in Sources */,
 				882A93A41D5B057C00DDBFB1 /* WSCycleScrollView.xcdatamodeld in Sources */,
