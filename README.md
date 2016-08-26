@@ -31,13 +31,13 @@ pageView.pageControl = pageControl;<br>
 
 #----代理方法----
 #### #pragma mark NewPagedFlowView Delegate
--(CGSize)sizeForPageInFlowView:(WSPageView *)flowView {
-return CGSizeMake(kScreenWidth - 84, kScreenHeight/4);
+-(CGSize)sizeForPageInFlowView:(WSPageView *)flowView {<br>
+    return CGSizeMake(kScreenWidth - 84, kScreenHeight/4);<br>
 }
 
--(void)didSelectCell:(UIView *)subView withSubViewIndex:(NSInteger)subIndex {
+-(void)didSelectCell:(UIView *)subView withSubViewIndex:(NSInteger)subIndex {<br>
 
-NSLog(@"点击了第%ld张图",(long)subIndex + 1);
+    NSLog(@"点击了第%ld张图",(long)subIndex + 1);<br>
 
 }
 
