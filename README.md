@@ -44,24 +44,30 @@ pageView.pageControl = pageControl;<br>
 }
 
 #### #pragma mark NewPagedFlowView Datasource
--(NSInteger)numberOfPagesInFlowView:(WSPageView *)flowView {
-return self.imageArray.count;
+-(NSInteger)numberOfPagesInFlowView:(WSPageView *)flowView {<br>
+
+    return self.imageArray.count;
+
 }
 
 -(UIView *)flowView:(WSPageView *)flowView cellForPageAtIndex:(NSInteger)index{
-WSIndexBanner *bannerView = (WSIndexBanner *)[flowView dequeueReusableCell];
-if (!bannerView) {
-bannerView = [[WSIndexBanner alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth - 84, kScreenHeight/4)];
-bannerView.layer.cornerRadius = 4;
-bannerView.layer.masksToBounds = YES;
+
+    WSIndexBanner *bannerView = (WSIndexBanner *)[flowView dequeueReusableCell];
+    if (!bannerView) {
+        bannerView = [[WSIndexBanner alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth - 84, kScreenHeight/4)];
+        bannerView.layer.cornerRadius = 4;
+        bannerView.layer.masksToBounds = YES;
+
 }
 
-bannerView.mainImageView.image = self.imageArray[index];
+    bannerView.mainImageView.image = self.imageArray[index];
 
-return bannerView;
+    return bannerView;
+
 }
 
 -(void)didScrollToPage:(NSInteger)pageNumber inFlowView:(WSPageView *)flowView {
 
-NSLog(@"滚动到了第%ld页",pageNumber);
+    NSLog(@"滚动到了第%ld页",pageNumber);
+
 }
