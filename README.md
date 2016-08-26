@@ -8,24 +8,24 @@
 
 # How To Use
 宏定义
-#####define kScreenWidth [UIScreen mainScreen].bounds.size.width
-#####define kScreenHeight [UIScreen mainScreen].bounds.size.height  
+##### #define kScreenWidth [UIScreen mainScreen].bounds.size.width
+##### #define kScreenHeight [UIScreen mainScreen].bounds.size.height  
 
 
-WSPageView *pageView = [[WSPageView alloc]initWithFrame:CGRectMake(0, 100, kScreenWidth, kScreenHeight/4)];<br>    
-pageView.delegate = self;<br> 
-pageView.dataSource = self;<br> 
-pageView.minimumPageAlpha = 0.4;   //非当前页的透明比例<br> 
-pageView.minimumPageScale = 0.85;  //非当前页的缩放比例
-pageView.orginPageCount = self.imageArray.count; //原始页数
-pageView.autoTime = 3;    //自动切换视图的时间,默认是5.0
+WSPageView *pageView = [[WSPageView alloc]initWithFrame:CGRectMake(0, 100, kScreenWidth, kScreenHeight/4)];<br>
+pageView.delegate = self;<br>
+pageView.dataSource = self;<br>
+pageView.minimumPageAlpha = 0.4;   //非当前页的透明比例<br>
+pageView.minimumPageScale = 0.85;  //非当前页的缩放比例<br>
+pageView.orginPageCount = self.imageArray.count; //原始页数<br>
+pageView.autoTime = 3;    //自动切换视图的时间,默认是5.0<br>
 
-//初始化pageControl
-UIPageControl *pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, pageView.frame.size.height - 8 - 10, kScreenWidth, 8)];
-pageView.pageControl = pageControl;
-[pageView addSubview:pageControl];
-[pageView startTimer];
-[self.view addSubview:pageView];
+//初始化pageControl<br>
+UIPageControl *pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, pageView.frame.size.height - 8 - 10, kScreenWidth, 8)];<br>
+pageView.pageControl = pageControl;<br>
+[pageView addSubview:pageControl];<br>
+[pageView startTimer];<br>
+[self.view addSubview:pageView];<br>
 
 
 
