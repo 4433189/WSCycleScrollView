@@ -32,24 +32,21 @@ pageView.pageControl = pageControl;
 #----代理方法----
 #### #pragma mark NewPagedFlowView Delegate
 ```ruby
--(CGSize)sizeForPageInFlowView:(WSPageView *)flowView {<br>
+-(CGSize)sizeForPageInFlowView:(WSPageView *)flowView {
 
     return CGSizeMake(kScreenWidth - 84, kScreenHeight/4);
-
 }
 
--(void)didSelectCell:(UIView *)subView withSubViewIndex:(NSInteger)subIndex {<br>
+-(void)didSelectCell:(UIView *)subView withSubViewIndex:(NSInteger)subIndex {
 
     NSLog(@"点击了第%ld张图",(long)subIndex + 1);
-
 }
 ```
 #### #pragma mark NewPagedFlowView Datasource
 ```ruby
--(NSInteger)numberOfPagesInFlowView:(WSPageView *)flowView {<br>
+-(NSInteger)numberOfPagesInFlowView:(WSPageView *)flowView {
 
     return self.imageArray.count;
-
 }
 -(UIView *)flowView:(WSPageView *)flowView cellForPageAtIndex:(NSInteger)index{
 
@@ -59,17 +56,14 @@ pageView.pageControl = pageControl;
         bannerView.layer.cornerRadius = 4;
         bannerView.layer.masksToBounds = YES;
 
-}
+    }
 
     bannerView.mainImageView.image = self.imageArray[index];
-
     return bannerView;
-
 }
 
 -(void)didScrollToPage:(NSInteger)pageNumber inFlowView:(WSPageView *)flowView {
 
     NSLog(@"滚动到了第%ld页",pageNumber);
-
 }
 ```
