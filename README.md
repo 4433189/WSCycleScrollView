@@ -15,8 +15,8 @@
 WSPageView *pageView = [[WSPageView alloc]initWithFrame:CGRectMake(0, 100, kScreenWidth, kScreenHeight/4)]; 
 pageView.delegate = self;   
 pageView.dataSource = self; 
-pageView.minimumPageAlpha = 0.4;   //非当前页的透明比例  
-pageView.minimumPageScale = 0.85;  //非当前页的缩放比例  
+pageView.minimumPageAlpha = 0.4;   //非当前页的透明比例
+pageView.minimumPageScale = 0.85;  //非当前页的缩放比例
 pageView.orginPageCount = self.imageArray.count; //原始页数
 pageView.autoTime = 3;    //自动切换视图的时间,默认是5.0
 
@@ -31,35 +31,35 @@ pageView.pageControl = pageControl;
 
 #----代理方法----
 #### #pragma mark NewPagedFlowView Delegate
--- (CGSize)sizeForPageInFlowView:(WSPageView *)flowView {
-    return CGSizeMake(kScreenWidth - 84, kScreenHeight/4);
+-(CGSize)sizeForPageInFlowView:(WSPageView *)flowView {
+return CGSizeMake(kScreenWidth - 84, kScreenHeight/4);
 }
 
--- (void)didSelectCell:(UIView *)subView withSubViewIndex:(NSInteger)subIndex {
+-(void)didSelectCell:(UIView *)subView withSubViewIndex:(NSInteger)subIndex {
 
-    NSLog(@"点击了第%ld张图",(long)subIndex + 1);
+NSLog(@"点击了第%ld张图",(long)subIndex + 1);
 
 }
 
 #### #pragma mark NewPagedFlowView Datasource
--- (NSInteger)numberOfPagesInFlowView:(WSPageView *)flowView {
-    return self.imageArray.count;
+-(NSInteger)numberOfPagesInFlowView:(WSPageView *)flowView {
+return self.imageArray.count;
 }
 
--- (UIView *)flowView:(WSPageView *)flowView cellForPageAtIndex:(NSInteger)index{
+-(UIView *)flowView:(WSPageView *)flowView cellForPageAtIndex:(NSInteger)index{
 WSIndexBanner *bannerView = (WSIndexBanner *)[flowView dequeueReusableCell];
-    if (!bannerView) {
-        bannerView = [[WSIndexBanner alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth - 84, kScreenHeight/4)];
-        bannerView.layer.cornerRadius = 4;
-        bannerView.layer.masksToBounds = YES;
-    }
-
-    bannerView.mainImageView.image = self.imageArray[index];
-
-    return bannerView;
+if (!bannerView) {
+bannerView = [[WSIndexBanner alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth - 84, kScreenHeight/4)];
+bannerView.layer.cornerRadius = 4;
+bannerView.layer.masksToBounds = YES;
 }
 
-- (void)didScrollToPage:(NSInteger)pageNumber inFlowView:(WSPageView *)flowView {
+bannerView.mainImageView.image = self.imageArray[index];
 
-    NSLog(@"滚动到了第%ld页",pageNumber);
+return bannerView;
+}
+
+-(void)didScrollToPage:(NSInteger)pageNumber inFlowView:(WSPageView *)flowView {
+
+NSLog(@"滚动到了第%ld页",pageNumber);
 }
