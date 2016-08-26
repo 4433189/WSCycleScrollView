@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		881EB5DB1D6FCE580016B7E7 /* scroll.gif in Resources */ = {isa = PBXBuildFile; fileRef = 881EB5DA1D6FCE580016B7E7 /* scroll.gif */; };
 		882A93981D5B057C00DDBFB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A93971D5B057C00DDBFB1 /* main.m */; };
 		882A939B1D5B057C00DDBFB1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A939A1D5B057C00DDBFB1 /* AppDelegate.m */; };
 		882A939E1D5B057C00DDBFB1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 882A939D1D5B057C00DDBFB1 /* ViewController.m */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		881EB5DA1D6FCE580016B7E7 /* scroll.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = scroll.gif; sourceTree = "<group>"; };
 		882A93931D5B057C00DDBFB1 /* WSCycleScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSCycleScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		882A93971D5B057C00DDBFB1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		882A93991D5B057C00DDBFB1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				882A939F1D5B057C00DDBFB1 /* Main.storyboard */,
 				882A93A51D5B057C00DDBFB1 /* Assets.xcassets */,
 				882A93A71D5B057C00DDBFB1 /* LaunchScreen.storyboard */,
+				881EB5DA1D6FCE580016B7E7 /* scroll.gif */,
 				882A93AA1D5B057C00DDBFB1 /* Info.plist */,
 				882A93A21D5B057C00DDBFB1 /* WSCycleScrollView.xcdatamodeld */,
 				882A93961D5B057C00DDBFB1 /* Supporting Files */,
@@ -282,6 +285,7 @@
 				882A93DC1D5B0AF500DDBFB1 /* 4.jpg in Resources */,
 				882A93D41D5B0ADA00DDBFB1 /* 0.jpg in Resources */,
 				882A93DA1D5B0AF000DDBFB1 /* 3.jpg in Resources */,
+				881EB5DB1D6FCE580016B7E7 /* scroll.gif in Resources */,
 				882A93D61D5B0AE200DDBFB1 /* 1.jpg in Resources */,
 				882A93A91D5B057C00DDBFB1 /* LaunchScreen.storyboard in Resources */,
 				882A93A61D5B057C00DDBFB1 /* Assets.xcassets in Resources */,
@@ -544,6 +548,7 @@
 				882A93C51D5B057C00DDBFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		882A93C61D5B057C00DDBFB1 /* Build configuration list for PBXNativeTarget "WSCycleScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +557,7 @@
 				882A93C81D5B057C00DDBFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		882A93C91D5B057C00DDBFB1 /* Build configuration list for PBXNativeTarget "WSCycleScrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -560,6 +566,7 @@
 				882A93CB1D5B057C00DDBFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
